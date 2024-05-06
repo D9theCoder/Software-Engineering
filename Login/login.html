@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login / Register</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container container1" id="container1">
+            <form action="" method="post" class="form" id="form1" onsubmit="validateForm(event)">
+                <h2 class="form_title title">Create Account</h2>
+                <input type="text" class="form_input" placeholder="Name" id="name" name="name">
+                <input type="text" class="form_input" placeholder="Email" id="email" name="email">
+                <input type="password" class="form_input" placeholder="Password" id="password" name="password">
+                <input type="date" class="form_input" placeholder="Date of Birth" id="dob" name="dob"><br><br>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">I agree to the terms and condition</label>
+                <input type="submit" value="REGISTER" class="register">
+            </form>
+        </div>
+        <div class="container container2" id="container2">
+            <form action="" method="post" class="form" id="form2" onsubmit="validateForm2(event)">
+                <h2 class="form_title title">Login to Website</h2>
+                <input type="text" class="form_input" placeholder="Email" id="emailr" name="emailr">
+                <input type="password" class="form_input" placeholder="Password" id="passwordr" name="passwordr">
+                <input type="submit" value="LOGIN" class="login">
+            </form>
+        </div>
+        <div class="switch" id="switch-cnt">
+            <div class="switch_container" id="switch-c1">
+                <h2 class="switch_title title">One of Us?</h2>
+                <p class="switch_description description">Already have an account? Please Login</p>
+                <button class="switch_button button switch-btn">Sign In</button>
+            </div>
+            <div class="switch_container is-hidden" id="switch-c2">
+                <h2 class="switch_title title">New to Jelajah?</h2>
+                <p class="switch_description description">Make a new account</p>
+                <button class="switch_button button switch-btn">Create Account</button>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="loginval.js"></script>
+</body>
+</html>
