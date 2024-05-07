@@ -42,7 +42,7 @@ a:hover {
     border: 2px solid transparent;
     padding: 0.5rem;
     position: absolute;
-    box-shadow: 0 10px 9px 0 rgba(0,0,0,.3);
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
 }
 
 .navbar .logo a {
