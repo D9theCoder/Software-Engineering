@@ -32,14 +32,6 @@ function animation(){
     for(b of btn){
         b.classList.remove('active');
     }
-
-    // let banner = document.getElementById('banner');
-    // let banners = ['../Image/Background_Fatahillah1.png', '../Image/Background_Mandiri1.png', '../Image/Background_BankIndonesia1.png'];
-    
-    // setInterval(function () {
-    //     let random = Math.floor(Math.random() * 3);
-    //     banner.src = banners[random];
-    // },500)
 }
 
 btn[0].onclick = function () {
