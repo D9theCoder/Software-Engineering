@@ -2,10 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="support.css">
     <title>Support</title>
 </head>
 <body>
-    
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Jelajah</a></div>
+            <ul class="links">
+                <li><a href="../Home/home.html">Home</a></li>
+                <li><a href="../About/about.html">About Us</a></li>
+                <li><a href="../Support/support.html">Support Us</a></li>
+            </ul>
+            <a href="../Login/login.html" class="action_btn">Register</a>
+            <div class="toggle_btn">
+                <i class="fas fa-bars black-icon"></i>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="../Home/home.html">Home</a></li>
+                        <li><a href="../About/about.html">About Us</a></li>
+                        <li><a href="../Support/support.html">Support Us</a></li>
+                        <li><a href="../Login/login.html" class="action_btn2">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        
+
+        <div class="donation-info">
+            <h1>Donation Info</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat eros eget enim gravida finibus. Proin iaculis posuere felis, sed porta nunc vehicula sed. Integer eleifend sem non elit dictum, quis aliquet orci iaculis. Fusce eget sodales diam, ac porttitor magna. Vivamus finibus lobortis diam, ut feugiat magna scelerisque venenatis. Nam sollicitudin lorem turpis, eu volutpat nunc interdum imperdiet. Quisque et orci facilisis, pharetra arcu in, viverra sapien. Nam accumsan odio id mauris aliquam sollicitudin. Aliquam iaculis tellus enim, a pretium dui pharetra non. Phasellus ex nisi, pharetra a nisl vitae, commodo luctus dolor. Fusce lacinia augue eu porta posuere. Nulla finibus lacus orci, quis imperdiet dolor ultricies eget. Nulla vel dapibus odio, in elementum est. Sed eget magna maximus, tincidunt arcu vel, eleifend arcu. Nullam laoreet placerat placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        
+        <div class="center-container">
+            <div class="donation-container">
+                <h1>Donate Now</h1>
+                <input type="radio" id="one-time" name="frequency" value="one-time">
+                <label for="one-time">One Time</label><br>
+                <input type="radio" id="monthly" name="frequency" value="monthly">
+                <label for="monthly">Monthly</label><br>
+                <label for="amount">Rp </label>
+                <input type="text" id="amount" name="amount"><br>
+                <h2>Select Payment Method</h2>
+                <h3>Bank</h3>
+                <input type="radio" id="bca" name="bank" value="bca">
+                <label for="bca">BCA</label><br>
+                <input type="radio" id="bri" name="bank" value="bri">
+                <label for="bri">BANK BRI</label><br>
+                <input type="radio" id="mandiri" name="bank" value="mandiri">
+                <label for="mandiri">Mandiri</label><br>
+                <input type="radio" id="bni" name="bank" value="bni">
+                <label for="bni">BNI</label><br>
+                <h3>E-Wallet</h3>
+                <input type="radio" id="dana" name="ewallet" value="dana">
+                <label for="dana">Dana</label><br>
+                <input type="radio" id="ovo" name="ewallet" value="ovo">
+                <label for="ovo">OVO</label><br>
+                <input type="radio" id="spay" name="ewallet" value="spay">
+                <label for="spay">S Pay</label><br>
+                <input type="radio" id="gopay" name="ewallet" value="gopay">
+                <label for="gopay">gopay</label><br>
+                <div class="button-container">
+                    <button class="donation-button">CONFIRM</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
