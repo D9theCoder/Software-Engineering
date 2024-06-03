@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', serif;
 }
 
 li {
@@ -12,27 +12,30 @@ li {
 a {
   text-decoration: none;
   color: black;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
 a:hover {
-  color: orange;
-}
-
-header {
-  position: relative;
-  padding: 0 2rem;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
 }
 
 .navbar {
   list-style-type: none;
   width: 100%;
   height: 60px;
-  max-width: 1440px;
+  max-width: 4000px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  z-index: 99;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  background-color: #F5F5FA;
+  position: absolute;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
 }
 
 .navbar .logo a {
@@ -42,7 +45,7 @@ header {
 
 .navbar .links {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .navbar .toggle_btn {
@@ -99,23 +102,17 @@ header {
   justify-content: center; 
 }
 
-b {
-  text-decoration: none;
-  color: #000;
-  font-size: 0.8rem;  
-}
-
-b:hover {
-  color: orange;
-}
-
 .dropdown_menu .action_btn {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-@media (max-width: 992px) {
+.black-icon {
+  color: black;
+}
+
+@media (max-width: 1000px) {
   .navbar .links,
   .navbar .action_btn {
       display: none;
