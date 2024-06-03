@@ -92,7 +92,6 @@ a:hover {
 
 .dropdown_menu.open {
     height: 240px;
-
 }
 
 .dropdown_menu li {
@@ -127,13 +126,17 @@ a:hover {
     }
 }
 
-.text{
+.content {
+    padding-top: 80px;
+}
+
+.text {
     padding-top: 80px;
     padding-left: 65px;
     text-align: justify;
 }
 
-.text h1{
+.text h1 {
     font-size: 2.5rem;
     font-weight: bold;
     color: #333;
@@ -141,12 +144,13 @@ a:hover {
     max-width: 900px;
 }
 
-.text p{
+.text p {
     font-size: 1rem;
     color: #333;
     margin-top: 1rem;
     max-width: 900px;
 }
+
 .start_btn {
     background-color: rgba(0, 0, 0, 0.5);
     color:  white;
@@ -155,21 +159,35 @@ a:hover {
     border-radius: 20px;
     position: absolute;
     font-size: 1.5rem;
-    top: 80%;
+    top: 90%;
     left: 30%;
     transform: translate(-50%, -50%);
     letter-spacing: 0.2rem;
 }
 
-.image1, .image2 {
-    display: grid;
-    grid-template-areas: 
-    "image1"
-    "image2";
-    float: right;
+.images {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 170px; 
+    right: 5%;
+    gap: 20px;
+    z-index: 1; 
 }
 
-.fatahillah {
+.bi {
     width: 300px;
     height: 200px;
+}
+
+
+@media (max-width: 1400px) {
+    .text {
+        padding-right: 370px; /* Adjust padding to make space for images */
+    }
+
+    .text .images {
+        position: sticky;
+        top: 20px;
+    }
 }
