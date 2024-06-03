@@ -12,14 +12,13 @@ li {
 a {
     text-decoration: none;
     color: black;
-    font-size: 0.8rem;
+    font-size: 2rem;
 }
 
 a:hover {
-    color: orange;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
 }
-
-
 
 .navbar {
     list-style-type: none;
@@ -34,17 +33,22 @@ a:hover {
     z-index: 99;
     padding-left: 4vw;
     padding-right: 4vw;
+    padding-top: 1vw;
 }
 
 .navbar .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: bolder;
 }
 
 .navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
 }
+
+/* .navbar .links li a {
+    font-size: 20px;
+} */
 
 .navbar .toggle_btn {
     color: #fff;
@@ -61,7 +65,7 @@ a:hover {
     border: none;
     outline: none;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -141,6 +145,88 @@ a:hover {
     position: relative;
 }
 
+.black-icon {
+    color: black;
+}
+
+.museum {
+    position: fixed;
+    overflow: hidden; 
+}
+
+.museumimages {
+    filter: brightness(80%);
+}
+
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 80px;
+}
+
+.w3-button:hover {
+    color: #000!important;
+    background-color: #ccc!important;
+}
+
+.w3-display-left {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+}
+
+.w3-display-right {
+    position: absolute;
+    top: 45%;
+    right: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(0%,-50%);
+}
+
+.w3-black,.w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important;
+}
+
+button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.start_btn {
+    background-color: rgba(0, 0, 0, 0.7);
+    color:  white;
+    border: 4px solid #555555;
+    padding: 0.5rem;
+    border-radius: 20px;
+    position: absolute;
+    align-items: center;
+    font-size: 2rem;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.2rem;
+}
+
 @media (max-width: 1000px) {
     .navbar .links,
     .navbar .action_btn {
@@ -158,102 +244,14 @@ a:hover {
     .museum h1{
         width: 100%;
         text-align: center;
-        top: 35%;
+        top: 25%;
     }
-}
 
-.black-icon {
-    color: black;
-}
+    .w3-button {
+        font-size: 40px;
+    }
 
-.museum {
-    position: fixed;
-    overflow: hidden; 
-}
-
-.museumimages {
-    filter: brightness(80%);
-}
-
-.w3-button {
-    border:none;
-    display:inline-block;
-    padding:8px 16px;
-    vertical-align:middle;
-    overflow:hidden;
-    text-decoration:none;
-    color:inherit;
-    background-color:inherit;
-    text-align:center;
-    cursor:pointer;
-    white-space:nowrap;
-}
-
-.w3-button:hover {
-    color:#000!important;
-    background-color:#ccc!important;
-}
-
-.w3-display-left {
-    position:absolute;
-    top:50%;
-    left:0%;
-    transform:translate(0%,-50%);
-    -ms-transform:translate(-0%,-50%);
-}
-
-.w3-display-right {
-    position:absolute;
-    top:50%;
-    right:0%;
-    transform:translate(0%,-50%);
-    -ms-transform:translate(0%,-50%);
-}
-
-.w3-black,.w3-hover-black:hover {
-    color:#fff!important;
-    background-color:#000!important;
-}
-
-.w3-display-left2 {
-    position:absolute;
-    top:42.5%;
-    left:0%;
-    transform:translate(0%,-50%);
-    -ms-transform:translate(-0%,-50%);
-}
-
-.w3-display-right2 {
-    position:absolute;
-    top:42.5%;
-    right:0%;
-    transform:translate(0%,-50%);
-    -ms-transform:translate(0%,-50%);
-}
-
-button {
-    background-color: #04AA6D; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-.start_btn {
-    background-color: rgba(0, 0, 0, 0.5);
-    color:  white;
-    border: 2px solid #555555;
-    padding: 0.5rem;
-    border-radius: 20px;
-    position: absolute;
-    font-size: 2rem;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    letter-spacing: 0.2rem;
+    .start_btn {
+        top: 65%;
+    }
 }
