@@ -209,3 +209,10 @@ body {
 .is-gx {
   animation: is-gx 1.25s;
 }
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: left;
+}
