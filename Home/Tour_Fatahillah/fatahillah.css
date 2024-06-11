@@ -126,18 +126,14 @@ a:hover {
     }
 }
 
-.content {
-    padding-top: 80px;
-}
-
 .text {
     padding-top: 80px;
     padding-left: 65px;
     text-align: justify;
 }
 
-.text h1 {
-    font-size: 2.5rem;
+.text h2 {
+    font-size: 30px;
     font-weight: bold;
     color: #333;
     margin-bottom: 1rem;
@@ -145,7 +141,7 @@ a:hover {
 }
 
 .text p {
-    font-size: 1rem;
+    font-size: 20px;
     color: #333;
     margin-top: 1rem;
     max-width: 900px;
@@ -165,7 +161,7 @@ a:hover {
     letter-spacing: 0.2rem;
 }
 
-.images {
+.fatahillah1{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -173,12 +169,31 @@ a:hover {
     right: 5%;
     gap: 20px;
     z-index: 1; 
-}
-
-.bi {
+    border-radius: 20px;
     width: 300px;
     height: 200px;
 }
+
+.fatahillah2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 170px; 
+    right: 5%;
+    gap: 20px;
+    z-index: 1; 
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    top: 400px;
+}
+
+@media (max-width: 1400px) {
+    .text{
+        padding-right: 400px;
+    }
+}
+
 
 .w3-button {
     border: none;
