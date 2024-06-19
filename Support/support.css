@@ -63,7 +63,7 @@ a:hover {
   border: none;
   outline: none;
   border-radius: 20px;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
 }
@@ -127,95 +127,40 @@ a:hover {
   }
 }
 
-.black-icon {
+.content{
+  width: 100%;
+  position: absolute;
+  text-align: left;
   color: black;
+  margin-left: 25px;
+  margin-right: 50px;;
 }
 
-.container {
-  position: absolute;
-  top: 10;
-  height: 100%;
-  background-color: white;
-  transition: 1.25s;
-  border-radius: 7px;
-}
-
-.containerPart2 {
-  position: absolute;
-  top: 10;
-  height: 100%;
-  background-color: white;
-  transition: 1.25s;
-  border-radius: 7px;
-}
-
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-
-
-.main {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 20px;
-}
-
-.center-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.donation-container {
+.donate-button {
+  display: inline-block; 
   padding: 10px 20px;
-  margin: 25px;
-  width: auto;
-  height: auto;
-  outline: solid 3px #D9D9D9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.donation-info {
-  width: 100%;
-  margin: auto;
-  margin-top: 52px;
-}
-
-.donation-form {
-  margin: 20px;
-}
-
-.donation-button {
-
-  background-color: #D9D9D9;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  color: #fff;
+  background-color: orange;
   border: none;
-  outline: black;
   border-radius: 5px;
-
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 50px; 
+  margin-left: 950px;
 }
 
-.button-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.donate-button:hover {
+    background-color: #ff6600;
+}
+
+.content h1{
+  font-size: 30px;
+  margin-top: 80px;
+}
+
+.content p{
+  font-size: 18px;
   margin-top: 20px;
+  padding-right: 50px;
 }
