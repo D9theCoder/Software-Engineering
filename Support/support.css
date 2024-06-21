@@ -23,18 +23,17 @@ a:hover {
 .navbar {
   list-style-type: none;
   width: 100%;
-  height: 60px;
+  height: 70px;
   max-width: 4000px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
   z-index: 99;
   padding-left: 4vw;
   padding-right: 4vw;
-  background-color: #F5F5FA;
-  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(15px);
   box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
 }
 
@@ -92,7 +91,6 @@ a:hover {
 
 .dropdown_menu.open {
   height: 240px;
-
 }
 
 .dropdown_menu li {
@@ -115,29 +113,38 @@ a:hover {
 @media (max-width: 1000px) {
   .navbar .links,
   .navbar .action_btn {
-      display: none;
+    display: none;
   }
 
   .navbar .toggle_btn {
-      display: block;
+    display: block;
   }
 
   .dropdown_menu {
-      display: block;
+    display: block;
+  }
+  
+  .start_btn {
+    top: 65%;
   }
 }
 
-.content{
+.content {
   width: 100%;
-  position: absolute;
   text-align: left;
   color: black;
-  margin-left: 25px;
-  margin-right: 50px;;
+  padding: 20px 30px;
+  margin-top: 10px;
+}
+
+.donation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .donate-button {
-  display: inline-block; 
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
@@ -146,21 +153,17 @@ a:hover {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 50px; 
-  margin-left: 950px;
 }
 
 .donate-button:hover {
-    background-color: #ff6600;
+  background-color: #ff6600;
 }
 
-.content h1{
+.content h1 {
   font-size: 30px;
-  margin-top: 80px;
 }
 
-.content p{
+.content p {
   font-size: 18px;
   margin-top: 20px;
-  padding-right: 50px;
 }
